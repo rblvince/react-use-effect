@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* dark mode guidato dalla classe .dark su <html> (impostata da ThemeToggle) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+body {
+  margin: 0;
+  background: #f8fafc;
+
+  @variant dark {
+    background: #020617;
+  }
+}
